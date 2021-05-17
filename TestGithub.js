@@ -1,5 +1,5 @@
 var app = angular.module('myApp', []);
-app.controller('myCtrl', function ($scope, $http) {
+app.controller('myCtroller', function ($scope, $http) {
 
     $scope.GetData = function () {
         $http
