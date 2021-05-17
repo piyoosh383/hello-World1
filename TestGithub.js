@@ -5,7 +5,7 @@ app.controller('myCtrl', function ($scope, $http) {
         $http
             ({
                 method: 'GET',
-                url: "https://hhhhteams.sharepoint.com/sites/HHHHTeams/_api/web/lists/getByTitle('TestGithubList')/items?$select=Title",
+                url: _spPageContextInfo.siteAbsoluteUrl + "/_api/web/lists/getByTitle('TestGithubList')/items?$select=Title",
                 header: {
                     "Accept": "application/json;odata=verbose"
                 }
