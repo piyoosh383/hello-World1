@@ -5,9 +5,7 @@ app.controller('myCtroller', function ($scope, $http) {
         $http
             ({
                 method: 'GET',
-                url: _spPageContextInfo.siteAbsoluteUrl + "/_api/web/lists/getByTitle('TestGithubList')/items?$select=Title",
-                 method: "GET",
-            async: false,
+                url: _spPageContextInfo.siteAbsoluteUrl + "/_api/web/lists/getByTitle('TestGithubList')/items?$select=Title",                      
             headers: {
                 "accept": "application/json;odata=verbose",
                 "content-Type": "application/json;odata=verbose"
