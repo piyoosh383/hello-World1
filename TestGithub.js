@@ -9,6 +9,7 @@ app.controller('myCtroller', function ($scope, $http) {
                 header: {
                     "Accept": "application/json;odata=verbose",
                     "Content-Type": "'application/json;odata=verbose'",
+                    "X-Content-Type-Options": "nosniff"
                 }
             }).then(function (getdata) {
                 console.log(myData);
