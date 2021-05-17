@@ -18,4 +18,5 @@ app.controller('myCtrl', function ($scope, $http) {
                     console.log(error);
                 });
     }
+    $scope.GetData();
 });
