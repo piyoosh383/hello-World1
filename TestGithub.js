@@ -11,8 +11,8 @@ app.controller('myCtrl', function ($scope, $http) {
                     "Access-Control-Allow-Origin": "*" 
                 }
             }).then(function (getdata) {
-                console.log(myData);
-                $scope.myData = getdata.data;
+               // console.log(myData);
+                $scope.myData = getdata.data.value;
                 // console.log($scope.groupBY); 
             },
                 function (error) {
