@@ -5,14 +5,12 @@ app.controller('myCtrl', function ($scope, $http) {
         $http
             ({
                 method: 'GET',
-                url: _spPageContextInfo.siteAbsoluteUrl + "/_api/web/lists/getByTitle('TestGithubList')/items?$select=Title",
+                url: "https://hhhhteams.sharepoint.com/sites/HHHHTeams/_api/web/lists/getByTitle('TestGithubList')/items?$select=Title",
                 header: {
                     "Accept": "application/json;odata=verbose"
                 }
-            }).then(function (getdata) {
-                console.log(myData);
-                $scope.myData = getdata.data;
-                // console.log($scope.groupBY); 
+            }).then(function (getdata) {                
+                $scope.myData = getdata.data;              
             },
                 function (error) {
                     console.log(error);
