@@ -6,18 +6,10 @@ app.controller('myCtrl', function ($scope, $http) {
             ({
                 method: 'GET',
                 url: _spPageContextInfo.siteAbsoluteUrl + "/_api/web/lists/getByTitle('TestGithubList')/items?$select=Title",
-       contentType: 'application/json',
-  dataType:'jsonp',
-  responseType:'application/json',
-  xhrFields: {
-    withCredentials: false
-  },
-  headers: {
-    'Access-Control-Allow-Credentials' : true,
-    'Access-Control-Allow-Origin':'*',
-    'Access-Control-Allow-Methods':'GET',
-    'Access-Control-Allow-Headers':'application/json',
-  },
+                header: {
+                    "Accept": "application/json;odata=verbose",
+                    "Access-Control-Allow-Origin": "*"
+                }
             }).then(function (getdata) {               
                 $scope.myData = getdata.data.value;               
             },
