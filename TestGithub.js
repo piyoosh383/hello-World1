@@ -1,5 +1,5 @@
 
-ShareApp.controller("myCtrl", ["$scope", "$q", "$http", "$rootScope", "$uibModal", "$timeout", "SharewebListService", "SharewebCommonFactoryService", "GlobalConstants",
+ShareApp.controller("myCtroller", ["$scope", "$q", "$http", "$rootScope", "$uibModal", "$timeout", "SharewebListService", "SharewebCommonFactoryService", "GlobalConstants",
     function ($scope, $q, $http, $rootScope, $uibModal, $timeout, SharewebListService, SharewebCommonFactoryService, GlobalConstants) {
         $scope.GetData = function () {
             $http
