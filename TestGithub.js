@@ -1,7 +1,6 @@
-//var app = angular.module('myApp', []);
-//app.controller('myCtrl', function ($scope, $http) {
-ShareApp.controller("myCtrl", ["$scope", "$http", "$rootScope", "$uibModal", "$q", "$timeout", "SharewebListService", "SharewebCommonFactoryService", "GlobalConstants",
-    function ($scope, $http, $rootScope, $uibModal, $q, $timeout, SharewebListService, SharewebCommonFactoryService, GlobalConstants) {
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function ($scope, $http) {
+
    $scope.GetData = function () {
         $http
             ({
@@ -20,4 +19,4 @@ ShareApp.controller("myCtrl", ["$scope", "$http", "$rootScope", "$uibModal", "$q
     }
     $scope.GetData();
          
- }]);
+ });
