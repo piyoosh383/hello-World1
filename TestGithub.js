@@ -2,7 +2,7 @@
 //app.controller('myCtrl', function ($scope, $http) {
 ShareApp.controller("myCtrl", ["$scope", "$http", "$rootScope", "$uibModal", "$q", "$timeout", "SharewebListService", "SharewebCommonFactoryService", "GlobalConstants",
     function ($scope, $http, $rootScope, $uibModal, $q, $timeout, SharewebListService, SharewebCommonFactoryService, GlobalConstants) {
-   /* $scope.GetData = function () {
+   $scope.GetData = function () {
         $http
             ({
                 method: 'GET',
@@ -19,6 +19,5 @@ ShareApp.controller("myCtrl", ["$scope", "$http", "$rootScope", "$uibModal", "$q
                 });
     }
     $scope.GetData();
-    */
-        $scope.name='pravesh';
+         
  }]);
