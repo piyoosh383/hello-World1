@@ -16,6 +16,7 @@ app.controller('myCtrl', function ($scope, $http) {
             },
                 function (error) {
                     console.log(error);
+           
                 });
     }
     $scope.GetData();
