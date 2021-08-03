@@ -1,7 +1,5 @@
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function ($scope, $http) {
-//ShareApp.controller("PortfolioStructureCreationController", ["$scope", "$http", "$rootScope", "$uibModal", "$q", "$timeout", "SharewebListService", "SharewebCommonFactoryService", "GlobalConstants",
-   // function ($scope, $http, $rootScope, $uibModal, $q, $timeout, SharewebListService, SharewebCommonFactoryService, GlobalConstants) {
    $scope.GetData = function () {
         $http
             ({
